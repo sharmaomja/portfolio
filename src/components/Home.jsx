@@ -4,6 +4,7 @@ import home from '../assets/home.jpg';
 import About from './About';
 import Navbar from './Navbar';
 import SocialLinks from './Sociallinks';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -26,12 +27,19 @@ const Home = () => {
               With eight months of hands-on experience. I bring expertise in a diverse tech-stack, encompassing Java, Python, SQL, and JavaScript, along with proficiency in frameworks such as Django, MERN (MongoDB, Express.js, React.js, Node.js), PERN, Next.js, and Redux. My skill set allows me to develop robust and scalable web apps, leveraging a combination of backend and frontend technologies to deliver efficient solutions
             </p>
             <div className="mt-4">
-              <button className="group bg-pink-400 text-white font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-full cursor-pointer transition duration-300 hover:bg-pink-600 transform hover:translate-x-2" data-aos="fade-up" data-aos-delay={1500}>
-                Explore Projects
-                <span className='ml-1 transition duration-300 transform group-hover:rotate-90'>
-                  <MdOutlineKeyboardArrowRight size={25} />
-                </span>
-              </button>
+            <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="group bg-pink-400 text-white font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-full cursor-pointer transition duration-300 hover:bg-pink-600 transform hover:translate-x-2"
+            data-aos="fade-up"
+            data-aos-delay={1500}
+          >
+            Explore Projects
+            <span className='ml-1 transition duration-300 transform group-hover:rotate-90'>
+              <MdOutlineKeyboardArrowRight size={25} />
+            </span>
+          </ScrollLink>
             </div>
           </div>
         </div>

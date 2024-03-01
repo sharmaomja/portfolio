@@ -82,10 +82,10 @@ const Projects = () => {
               <img src={project.image} alt={project.title} className="rounded-t-md h-36 w-full object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                <p className='text-sm mb-4'>{project.description}</p>
+                <p className='text-sm mb-4 hidden md:block'>{project.description}</p>
                 <div className="mt-4 flex justify-between">
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="bg-pink-400 hover:bg-pink-600 text-white py-2 px-4 rounded-md">Demo</a>
-                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="bg-pink-400 hover:bg-pink-600 text-white py-2 px-4 rounded-md">Code</a>
+                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="bg-pink-400 hover:bg-pink-600 text-white md:py-2 md:px-4 py-1 px-2 rounded-md">Demo</a>
+                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="bg-pink-400 hover:bg-pink-600 text-white md:py-2 md:px-4 py-1 px-2 rounded-md">Code</a>
                 </div>
               </div>
             </div>
